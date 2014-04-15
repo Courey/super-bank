@@ -46,7 +46,7 @@
       $('#balance').text(balance);
     }
     else{
-      $('#balance').text('(' + balance + ')');
+      $('#balance').text('(' + (balance * -1) + ')');
     }
   }
 
@@ -66,7 +66,7 @@
     var $td3 = $('<td class="with">').text(withdrawl);
     var $td4;
     if(balance < 0){
-     $td4 = $('<td class="bal">').text('(' + balance + ')');
+     $td4 = $('<td class="bal">').text('(' + (balance * -1) + ')');
     }else{
       $td4 = $('<td class="bal">').text(balance);}
 
